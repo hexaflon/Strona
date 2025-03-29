@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://localhost:5064/IndexTeacher -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona główna - Strona</title>
+    <link rel="stylesheet" href="./index_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./index_files/site.css">
+    <link rel="stylesheet" href="./index_files/all.min.css">
+    <link rel="stylesheet" href="./index_files/all(1).min.css" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY3SNpVJ3+Od5uLZB38E5c5erDizYUA+V6s5V" crossorigin="anonymous">
+    <style>
+        .cookie-banner {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            border-radius: 5px;
+            z-index: 1000;
+        }
+
+        .cookie-banner button {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body class="dark-mode">
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="http://localhost:5064/IndexTeacher?action=Index&amp;controller=Home">Strona</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    
+
+
+    <ul class="navbar-nav custom-navbar">
+        <li class="nav-item">
+            <a class="nav-link" href="http://localhost:5064/IndexTeacher">Strona główna</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="http://localhost:5064/Question">Pytania</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="http://localhost:5064/Exam/List">Testy</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="http://localhost:5064/Group/List">Grupy</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="http://localhost:5064/Contact">Kontakt</a>
+        </li>
+    </ul>
+
+
+<ul class="navbar-nav ms-auto align-items-center">
+        <!-- Pole wyszukiwania -->
+        <li class="nav-item me-3">
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Szukaj" aria-label="Search">
+                <button class="btn btn-outline-secondary" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </li>
+        <!-- Dropdown użytkownika -->
+        <li class="nav-item dropdown">
+            <button class="btn btn-light dropdown-toggle" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-user"></i> testnauczyciel3@gmail.com
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                <li>
+                    <a class="dropdown-item" href="http://localhost:5064/Identity/Account/Manage">
+                        <i class="fas fa-user-cog"></i> Profil
+                    </a>
+                </li>
+                <li>
+                    <form method="post" action="http://localhost:5064/Identity/Account/Logout">
+                        <button type="submit" class="dropdown-item">
+                            <i class="fas fa-sign-out-alt"></i> Wyloguj się
+                        </button>
+                    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8POjbnA164dPgoq1tKBXqKT3fAb0aOnuk6vmWNJzodqpko6e7w252XIjW6oYUUluTo3xzXMCAwBbjiE2xK90GKKIVEEExoJ7qi-yL1cQ-aZ4SKyphMyFXyWuoGBW_Ks_GFOCoW0gzA6WfsJ4vRFlK_GNCOFwg9MjpLJ3jWKLzUcQNhKEhPSsLhg34MICTkKu9Q"></form>
+                </li>
+            </ul>
+        </li>
+        <!-- Dark mode toggle -->
+        <li class="dropdown ms-2">
+            <button class="btn btn-light dropdown-toggle" type="button" id="darkModeDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-adjust"></i>
+            </button>
+            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="darkModeDropdown">
+                <a class="dropdown-item" href="http://localhost:5064/IndexTeacher#" onclick="setTheme(&#39;light&#39;)">
+                    <i id="sunIcon" class="fas fa-sun"></i> Tryb jasny
+                </a>
+                <a class="dropdown-item" href="http://localhost:5064/IndexTeacher#" onclick="setTheme(&#39;dark&#39;)">
+                    <i id="moonIcon" class="fas fa-moon"></i> Tryb ciemny
+                </a>
+            </div>
+        </li>
+</ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            
+
+<div class="container text-center mt-5">
+    <h1 class="display-4">Witaj, testnauczyciel3@gmail.com!</h1>
+
+    <div class="row mt-5">
+        <div class="col-md-6 offset-md-3">
+            <div class="d-flex align-items-center justify-content-center">
+                <div>
+                    <button class="btn btn-big" onclick="location.href=&#39;/Question&#39;">Zarządzaj pytaniami</button>
+                    <button class="btn btn-big" onclick="location.href=&#39;/Exam/List&#39;">Zarządzaj testami</button>
+                    <button class="btn btn-big" onclick="location.href=&#39;/Group/List&#39;">Zarządzaj grupami</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            © 2025 - Strona
+        </div>
+    </footer>
+    <script src="./index_files/jquery.min.js.pobrane"></script>
+    <script src="./index_files/bootstrap.bundle.min.js.pobrane"></script>
+    <script src="./index_files/site.js.pobrane"></script>
+
+    
+    <div id="cookieConsentBanner" class="cookie-banner" style="display: none;">
+        <p>Ta strona korzysta z plików cookies. Więcej informacji znajdziesz w naszej <a href="http://localhost:5064/privacy">polityce prywatności</a>.</p>
+        <button id="acceptCookies" class="btn btn-success">Zaakceptuj</button>
+        <button id="rejectCookies" class="btn btn-danger">Odrzuć</button>
+    </div>
+    <script src="./index_files/cookies.js.pobrane"></script>
+
+<!-- Visual Studio Browser Link -->
+<script type="text/javascript" src="./index_files/browserLink" async="async" id="__browserLink_initializationData" data-requestid="1652b0dc80284da4a79e894ae55a88b9" data-requestmappingfromserver="false" data-connecturl="http://localhost:50907/58b2a6f91a6b4a029634ec1f83e1beb9/browserLink"></script>
+<!-- End Browser Link -->
+<script src="./index_files/aspnetcore-browser-refresh.js.pobrane"></script>
+
+</body></html>
